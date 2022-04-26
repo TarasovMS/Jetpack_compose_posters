@@ -1,4 +1,4 @@
-# Compose_Poster
+# Jetpack_Compose_Poster
 demo version app on jetpack compose
 
 Приложеение выполнено с помощью Jetpact Compose.
