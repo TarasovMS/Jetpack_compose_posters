@@ -1,5 +1,7 @@
-# Compose_Poster
+# Jetpack_Compose_Poster
 demo version app on jetpack compose
+
+Приложеение выполнено с помощью Jetpact Compose.
 
 <p float="left">
   <img src="https://user-images.githubusercontent.com/80469992/165174113-675f0515-7082-4e33-9129-dc83813d4d05.png" width="100" />
