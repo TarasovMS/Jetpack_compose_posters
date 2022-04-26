@@ -30,12 +30,12 @@ class PosterRepository @Inject constructor(
                         emit(convertData)
                     }
                 } else onError(response.message())
-
             } else emit(posterList)
         }
-    }.onStart {
-        onStart.invoke()
     }
+        .onStart {
+            onStart.invoke()
+        }
         .onCompletion {
             onCompletion.invoke()
         }
@@ -70,5 +70,4 @@ class PosterRepository @Inject constructor(
             )
         }
     }
-
 }

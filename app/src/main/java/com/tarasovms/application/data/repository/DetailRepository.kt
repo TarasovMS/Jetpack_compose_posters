@@ -8,16 +8,15 @@ import kotlinx.coroutines.flow.flowOn
 import javax.inject.Inject
 
 class DetailRepository @Inject constructor(
-  private val posterDao: PosterDao
+    private val posterDao: PosterDao
 ) {
 
-  fun getPosterById(id: Long) = flow {
-    val poster = posterDao.getPosterId(id)
-    emit(poster)
-  }.flowOn(Dispatchers.IO)
+    fun getPosterById(id: Long) = flow {
+        val poster = posterDao.getPosterId(id)
+        emit(poster)
+    }.flowOn(Dispatchers.IO)
 
-  suspend fun updatePoster(poster: PosterLocal) {
-    posterDao.updatePoster(poster)
-  }
-
+    suspend fun updatePoster(poster: PosterLocal) {
+        posterDao.updatePoster(poster)
+    }
 }

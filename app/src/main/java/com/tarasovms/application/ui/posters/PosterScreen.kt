@@ -16,7 +16,6 @@ import com.tarasovms.application.utils.ImageNetworkCoil
 import com.tarasovms.application.data.db.PosterLocal
 import com.tarasovms.application.ui.theme.*
 
-
 @Composable
 fun HomePosters(
     modifier: Modifier = Modifier,
@@ -37,7 +36,6 @@ fun HomePosters(
         }
     }
 }
-
 
 @Composable
 private fun HomePoster(

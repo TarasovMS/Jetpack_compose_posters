@@ -1,6 +1,5 @@
 package com.tarasovms.application.ui.posters
 
-
 import androidx.annotation.StringRes
 import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.clickable
@@ -26,6 +25,7 @@ import com.tarasovms.application.ui.MainViewModel
 import com.tarasovms.application.ui.details.DetailViewModel
 import com.tarasovms.application.ui.favorites.FavoritesPosters
 import com.tarasovms.application.utils.visible
+
 
 @Composable
 fun Posters(
@@ -114,6 +114,7 @@ fun FavoriteButton(
     var isFavorite by remember { mutableStateOf(poster.like) }
 
     IconToggleButton(
+        modifier = modifier,
         checked = isFavorite,
         onCheckedChange = {
             isFavorite = !isFavorite

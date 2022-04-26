@@ -28,7 +28,7 @@ import com.tarasovms.application.utils.ImageNetworkCoil
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun FavoritesPosters(
-    modifier: Modifier = Modifier.background(MaterialTheme.colors.background),
+    modifier: Modifier = Modifier,
     posters: List<PosterLocal?>,
     selectPoster: (Long) -> Unit,
 ) {

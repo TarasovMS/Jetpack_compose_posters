@@ -22,40 +22,6 @@ import com.tarasovms.application.R
 import com.tarasovms.application.ui.theme.shimmerHighLight
 
 @Composable
-fun ImageNetworkGlide(
-    url: String,
-    modifier: Modifier,
-    contentScale: ContentScale = ContentScale.Crop
-) {
-    GlideImage(
-        modifier = modifier,
-        contentScale = contentScale,
-        imageModel = url,
-        loading = {
-            CircularProgressIndicator(
-                modifier = Modifier.size(32.dp)
-            )
-        },
-        failure = {
-            Column(
-                modifier = modifier,
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally,
-            ) {
-                Text(
-                    text = "image request failed.",
-                    style = MaterialTheme.typography.body2
-                )
-            }
-        },
-//        modifier = Modifier
-//            .padding(5.dp)
-//            .size(64.dp)
-//            .clip(Shapes.large)
-    )
-}
-
-@Composable
 fun ImageNetworkCoil(
     url: String,
     modifier: Modifier = Modifier,
@@ -86,6 +52,6 @@ fun ImageNetworkCoil(
                     style = MaterialTheme.typography.body2
                 )
             }
-        },
+        }
     )
 }

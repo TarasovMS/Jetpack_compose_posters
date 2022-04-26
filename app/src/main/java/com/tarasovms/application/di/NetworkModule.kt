@@ -19,31 +19,31 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
 
-  @Provides
-  @Singleton
-  fun provideOkHttpClient(@ApplicationContext context: Context): OkHttpClient {
-    val httpLogginInterceptor = HttpLoggingInterceptor()
-    httpLogginInterceptor.level = HttpLoggingInterceptor.Level.BODY
+    @Provides
+    @Singleton
+    fun provideOkHttpClient(@ApplicationContext context: Context): OkHttpClient {
+        val httpLogginInterceptor = HttpLoggingInterceptor()
+        httpLogginInterceptor.level = HttpLoggingInterceptor.Level.BODY
 
-    return OkHttpClient.Builder()
-      .addInterceptor(httpLogginInterceptor)
-      .cache(CoilUtils.createDefaultCache(context))
-      .build()
-  }
+        return OkHttpClient.Builder()
+            .addInterceptor(httpLogginInterceptor)
+            .cache(CoilUtils.createDefaultCache(context))
+            .build()
+    }
 
-  @Provides
-  @Singleton
-  fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
-    return Retrofit.Builder()
-      .client(okHttpClient)
-      .baseUrl(URL)
-      .addConverterFactory(GsonConverterFactory.create())
-      .build()
-  }
+    @Provides
+    @Singleton
+    fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
+        return Retrofit.Builder()
+            .client(okHttpClient)
+            .baseUrl(URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+    }
 
-  @Provides
-  @Singleton
-  fun provideDisneyService(retrofit: Retrofit): PosterService {
-    return retrofit.create(PosterService::class.java)
-  }
+    @Provides
+    @Singleton
+    fun providePosterService(retrofit: Retrofit): PosterService {
+        return retrofit.create(PosterService::class.java)
+    }
 }

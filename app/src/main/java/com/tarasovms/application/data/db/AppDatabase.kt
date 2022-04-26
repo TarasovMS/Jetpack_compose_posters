@@ -6,5 +6,5 @@ import androidx.room.RoomDatabase
 
 @Database(entities = [PosterLocal::class], version = 1, exportSchema = true)
 abstract class AppDatabase : RoomDatabase() {
-  abstract fun posterDao(): PosterDao
+    abstract fun posterDao(): PosterDao
 }

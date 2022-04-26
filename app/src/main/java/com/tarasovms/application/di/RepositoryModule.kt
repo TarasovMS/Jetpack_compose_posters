@@ -14,12 +14,12 @@ import dagger.hilt.android.scopes.ViewModelScoped
 @InstallIn(ViewModelComponent::class)
 object RepositoryModule {
 
-  @Provides
-  @ViewModelScoped
-  fun provideArticlesRepository(
-      remoteService: PosterService,
-      posterDao: PosterDao
-  ): PosterRepository {
-    return PosterRepository(remoteService, posterDao)
-  }
+    @Provides
+    @ViewModelScoped
+    fun providePostersRepository(
+        remoteService: PosterService,
+        posterDao: PosterDao
+    ): PosterRepository {
+        return PosterRepository(remoteService, posterDao)
+    }
 }

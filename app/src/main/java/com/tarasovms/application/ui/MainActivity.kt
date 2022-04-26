@@ -65,7 +65,7 @@ fun NavigationComponent(navController: NavHostController) {
             )
         ) { backStackEntry ->
             val posterId = backStackEntry.arguments?.getLong(NavScreen.PosterDetails.argument)
-                    ?: return@composable
+                ?: return@composable
 
             DetailScreen(posterId = posterId, viewModel = hiltViewModel()) {
                 navController.navigateUp()
