@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Application</string>
+    <string name="poster">Афиша</string>
+    <string name="favorites">Закладки</string>
+    <string name="empty_favorites">Отсутствуют понравившиеся фильмы</string>
+    <string name="show_plot">Показать сюжет</string>
+    <string name="hide_plot">Скрыть сюжет</string>
+</resources>

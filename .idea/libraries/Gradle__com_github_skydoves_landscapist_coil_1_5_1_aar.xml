@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.skydoves:landscapist-coil:1.5.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/172ef6eff5dd7c07a3f920a9a5220864/transformed/landscapist-coil-1.5.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/172ef6eff5dd7c07a3f920a9a5220864/transformed/landscapist-coil-1.5.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/172ef6eff5dd7c07a3f920a9a5220864/transformed/landscapist-coil-1.5.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.skydoves/landscapist-coil/1.5.1/d00f1f4e663822faa5e684bbef7cb30a353f3983/landscapist-coil-1.5.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.skydoves/landscapist-coil/1.5.1/f27e6e680582d2c619129a156a0fcbf453dee334/landscapist-coil-1.5.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
